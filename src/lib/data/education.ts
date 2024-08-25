@@ -3,16 +3,16 @@ import type { Education } from '../types';
 
 export const items: Array<Education> = [
 	{
-		degree: 'Bachelor degree of Computer Science',
+		degree: 'Bachelor degree of Computer Science specialization in Cybersecurity',
 		description: '',
-		location: 'Tunisia',
+		location: 'Agder',
 		logo: Assets.Unknown,
 		name: '',
-		organization: 'ISTIC',
-		period: { from: new Date(2020, 0, 1), to: new Date(2022, 5, 1) },
+		organization: 'UiA',
+		period: { from: new Date(2022, 8, 15), to: new Date(2025, 7, 1) },
 		shortDescription: '',
 		slug: 'dummy-education-item',
-		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English']
+		subjects: ['Cybersecurity', 'Object-oriented programming', 'Network', 'Operating systems', 'Databases', 'kubernetes', 'Chaos engineering']
 	},
 	{
 		degree: 'PhD of Computer Science',

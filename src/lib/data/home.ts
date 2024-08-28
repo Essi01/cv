@@ -8,13 +8,13 @@ export const name = 'Espen';
 export const lastName = 'Herredsvela';
 
 export const description =
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!';
+	'This website is currently under development. Please note that the information presented here may not be accurate or complete as the project is still in progress. I am actively working on improving and finalizing the content. Thank you for your understanding and patience.';
 
 export const links: Array<{ platform: Platform; link: string }> = [
 	{ platform: Platform.GitHub, link: 'https://github.com/' },
 	{
 		platform: Platform.Linkedin,
-		link: 'https://www.linkedin.com/'
+		link: 'https://www.linkedin.com/in/espen-herredsvela/'
 	},
 	{
 		platform: Platform.Twitter,
@@ -26,7 +26,7 @@ export const links: Array<{ platform: Platform; link: string }> = [
 	},
 	{
 		platform: Platform.Email,
-		link: 'riadh_adrani@hotmail.fr'
+		link: 'test@test.test'
 	},
 	{
 		platform: Platform.Youtube,

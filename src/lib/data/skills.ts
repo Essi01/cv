@@ -17,7 +17,19 @@ const categories = [
 	defineSkillCategory({ name: 'Dev Tools', slug: 'devtools' }),
 	defineSkillCategory({ name: 'Markup & Style', slug: 'markup-style' }),
 	defineSkillCategory({ name: 'Design', slug: 'design' }),
-	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' })
+	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' }),
+	defineSkillCategory({ name: 'Cybersecurity', slug: 'cyber' }),
+	defineSkillCategory({ name: 'Software Development', slug: 'software-dev' }),
+	defineSkillCategory({ name: 'Cloud Infrastructure', slug: 'cloud' }),
+	defineSkillCategory({ name: 'DevOps', slug: 'devops' }),
+	defineSkillCategory({ name: 'Data Communication', slug: 'data-comm' }),
+	defineSkillCategory({ name: 'Data Modeling & Databases', slug: 'databases' }),
+	defineSkillCategory({ name: 'Algorithms & Data Structures', slug: 'algos' }),
+	defineSkillCategory({ name: 'Operating Systems', slug: 'os' }),
+	defineSkillCategory({ name: 'Microcontrollers', slug: 'microcontrollers' }),
+	defineSkillCategory({ name: 'Mathematics & Physics', slug: 'math-physics' }),
+	defineSkillCategory({ name: 'Frameworks', slug: 'framework' }),
+	defineSkillCategory({ name: 'Chaos Engineering', slug: 'chaos' }),
 ] as const;
 
 const defineSkill = <S extends string>(
@@ -36,58 +48,100 @@ const defineSkill = <S extends string>(
 
 export const items = [
 	defineSkill({
-		slug: 'js',
-		color: 'yellow',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		slug: 'cybersecurity',
+		color: 'red',
+		description: 'Protecting systems, networks, and programs from digital attacks.',
+		logo: Assets.cyber,
+		name: 'Cybersecurity',
+		category: 'cyber'
+	}),
+	defineSkill({
+		slug: 'cyber-risk',
+		color: 'darkred',
+		description: 'Managing risks related to cybersecurity by identifying, analyzing, and responding to potential threats.',
+		logo: Assets.cyber,
+		name: 'Cybersecurity Risk Management',
+		category: 'cyber'
+	}),
+	defineSkill({
+		slug: 'software-dev',
+		color: 'blue',
+		description: 'Designing, coding, testing, and maintaining software applications.',
 		logo: Assets.JavaScript,
-		name: 'Javascript',
-		category: 'pro-lang'
+		name: 'Software Development',
+		category: 'software-dev'
 	}),
 	defineSkill({
-		slug: 'ts',
-		color: 'blue',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.TypeScript,
-		name: 'Typescript',
-		category: 'pro-lang'
+		slug: 'software-security',
+		color: 'green',
+		description: 'Implementing practices and tools to ensure the security of software throughout its lifecycle.',
+		logo: Assets.JavaScript,
+		name: 'Software Security',
+		category: 'software-dev'
 	}),
 	defineSkill({
-		slug: 'css',
-		color: 'blue',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.CSS,
-		name: 'CSS',
-		category: 'markup-style'
+		slug: 'cloud-infra',
+		color: 'purple',
+		description: 'Designing and managing scalable and reliable cloud infrastructure.',
+		logo: Assets.Unknown,
+		name: 'Cloud Infrastructure',
+		category: 'cloud'
 	}),
 	defineSkill({
-		slug: 'html',
+		slug: 'network-security',
 		color: 'orange',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.HTML,
-		name: 'HTML',
-		category: 'markup-style'
+		description: 'Ensuring the security and privacy of data as it is transmitted across networks.',
+		logo: Assets.Unknown,
+		name: 'Network, Security, and Privacy',
+		category: 'data-comm'
 	}),
 	defineSkill({
-		slug: 'sass',
-		color: 'pink',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.Sass,
-		name: 'Sass',
-		category: 'markup-style'
+		slug: 'data-modeling',
+		color: 'yellow',
+		description: 'Creating conceptual and logical models for managing and storing data efficiently.',
+		logo: Assets.Unknown,
+		name: 'Data Modeling and Databases',
+		category: 'databases'
 	}),
 	defineSkill({
-		slug: 'reactjs',
-		color: 'cyan',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.ReactJs,
-		name: 'React Js',
-		category: 'library'
+		slug: 'algos',
+		color: 'darkblue',
+		description: 'Designing and analyzing algorithms and data structures to solve computational problems efficiently.',
+		logo: Assets.Unknown,
+		name: 'Algorithms and Data Structures',
+		category: 'algos'
+	}),
+	defineSkill({
+		slug: 'os',
+		color: 'gray',
+		description: 'Understanding and managing the software that controls computer hardware and provides a base for application software.',
+		logo: Assets.Unknown,
+		name: 'Operating Systems',
+		category: 'os'
+	}),
+	defineSkill({
+		slug: 'microcontrollers',
+		color: 'teal',
+		description: 'Working with small computers on a single integrated circuit for automation and control systems.',
+		logo: Assets.Unkown,
+		name: 'Microcontrollers',
+		category: 'microcontrollers'
+	}),
+	defineSkill({
+		slug: 'math-physics',
+		color: 'navy',
+		description: 'Applying mathematical concepts and physical principles to solve problems in ICT.',
+		logo: Assets.Unknown,
+		name: 'Mathematics and Physics for ICT',
+		category: 'math-physics'
+	}),
+	defineSkill({
+		slug: 'chaos-engineering',
+		color: 'black',
+		description: 'Experimenting on a system to build confidence in its capability to withstand turbulent conditions in production.',
+		logo: Assets.Unknown,
+		name: 'Chaos Engineering',
+		category: 'chaos'
 	}),
 	defineSkill({
 		slug: 'svelte',
@@ -95,8 +149,16 @@ export const items = [
 		description: svelte,
 		logo: Assets.Svelte,
 		name: 'Svelte',
-		category: 'library'
-	})
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'devops',
+		color: 'cyan',
+		description: 'Combining software development and IT operations to shorten the development lifecycle.',
+		logo: Assets.Unknown,
+		name: 'DevOps',
+		category: 'devops'
+	}),
 ] as const;
 
 export const title = 'Skills';

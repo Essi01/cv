@@ -1,5 +1,7 @@
 https://github.com/RiadhAdrani/slick-portfolio-svelte?ref=sveltethemes.dev
 
+# Start npm run dev
+
 
 Windows PowerShell
 Copyright (C) Microsoft Corporation. All rights reserved.
@@ -155,3 +157,7 @@ Forced re-optimization of dependencies
 20:53:29 [vite] hmr update /src/routes/+page.svelte, /src/lib/components/NavMenu/NavMenu.svelte (x2)
 20:53:34 [vite] hmr update /src/routes/+page.svelte, /src/lib/components/NavMenu/NavMenu.svelte (x3)
 PS C:\Users\Espen\github\slick-portfolio-svelte>
+
+
+
+# Start npm run dev

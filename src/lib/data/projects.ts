@@ -4,36 +4,20 @@ import type { Project } from '../types';
 
 export const items: Array<Project> = [
 	{
-		slug: 'slick-portfolio-angular',
-		color: '#5e95e3',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Unknown,
-		name: 'Slick Portfolio',
-		period: {
-			from: new Date()
-		},
-		skills: getSkills('angular', 'ts', 'tailwind'),
-		type: 'Website Template'
-	},
-	{
-		slug: 'slick-portfolio-svelte',
+		slug: 'CV Website',
 		color: '#ff3e00',
 		description:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+			' This CV website was developed using Typescript and SvelteKit. Unlike most of my school projects, which were built from scratch, I chose to use an existing template for this project. My goal was to gain more experience in understanding and adapting to other developers code, as well as learning how to effectively customize and extend an existing project to fit my personal brand. This approach offered a different challenge compared to creating something from scratch, as it required me to dive into unfamiliar code, make meaningful changes, and ensure that the final product reflected my unique style and requirements. Additionally, I set up hosting for the website, ensuring it is live and accessible online.',
 		shortDescription:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+			'CV website developed with Typescript and SvelteKit and set up hosting.',
 		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
 		logo: Assets.Svelte,
-		name: 'Slick Portfolio',
+		name: 'CV Website',
 		period: {
 			from: new Date()
 		},
 		skills: getSkills('svelte', 'ts', 'tailwind', 'sass'),
-		type: 'Website Template',
+		type: 'Website',
 		screenshots: [
 			{
 				label: 'screen 1',

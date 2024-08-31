@@ -29,7 +29,7 @@ const categories = [
 	defineSkillCategory({ name: 'Microcontrollers', slug: 'microcontrollers' }),
 	defineSkillCategory({ name: 'Mathematics & Physics', slug: 'math-physics' }),
 	defineSkillCategory({ name: 'Frameworks', slug: 'framework' }),
-	defineSkillCategory({ name: 'Chaos Engineering', slug: 'chaos' }),
+	defineSkillCategory({ name: 'Operations', slug: 'operations' }),
 ] as const;
 
 const defineSkill = <S extends string>(
@@ -85,7 +85,7 @@ export const items = [
 		description: 'Designing and managing scalable and reliable cloud infrastructure.',
 		logo: Assets.Unknown,
 		name: 'Cloud Infrastructure',
-		category: 'cloud'
+		category: 'operations'
 	}),
 	defineSkill({
 		slug: 'network-security',
@@ -101,7 +101,7 @@ export const items = [
 		description: 'Creating conceptual and logical models for managing and storing data efficiently.',
 		logo: Assets.Unknown,
 		name: 'Data Modeling and Databases',
-		category: 'databases'
+		category: 'software-dev'
 	}),
 	defineSkill({
 		slug: 'algos',
@@ -109,7 +109,7 @@ export const items = [
 		description: 'Designing and analyzing algorithms and data structures to solve computational problems efficiently.',
 		logo: Assets.Unknown,
 		name: 'Algorithms and Data Structures',
-		category: 'algos'
+		category: 'software-dev'
 	}),
 	defineSkill({
 		slug: 'os',
@@ -117,23 +117,7 @@ export const items = [
 		description: 'Understanding and managing the software that controls computer hardware and provides a base for application software.',
 		logo: Assets.Unknown,
 		name: 'Operating Systems',
-		category: 'os'
-	}),
-	defineSkill({
-		slug: 'microcontrollers',
-		color: 'teal',
-		description: 'Working with small computers on a single integrated circuit for automation and control systems.',
-		logo: Assets.Unkown,
-		name: 'Microcontrollers',
-		category: 'microcontrollers'
-	}),
-	defineSkill({
-		slug: 'math-physics',
-		color: 'navy',
-		description: 'Applying mathematical concepts and physical principles to solve problems in ICT.',
-		logo: Assets.Unknown,
-		name: 'Mathematics and Physics for ICT',
-		category: 'math-physics'
+		category: 'software-dev'
 	}),
 	defineSkill({
 		slug: 'chaos-engineering',
@@ -141,7 +125,7 @@ export const items = [
 		description: 'Experimenting on a system to build confidence in its capability to withstand turbulent conditions in production.',
 		logo: Assets.Unknown,
 		name: 'Chaos Engineering',
-		category: 'chaos'
+		category: 'operations'
 	}),
 	defineSkill({
 		slug: 'svelte',
@@ -157,7 +141,7 @@ export const items = [
 		description: 'Combining software development and IT operations to shorten the development lifecycle.',
 		logo: Assets.Unknown,
 		name: 'DevOps',
-		category: 'devops'
+		category: 'operations'
 	}),
 ] as const;
 

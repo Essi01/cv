@@ -76,7 +76,13 @@ const Assets = {
 	NHF : a('nhf.png'),
 	UiA: a('UiA.jpg'),
 	cyber: a('cybers.jpg'),
-	cloud: a()
+	CompTIA: a('CompTIASecurity.png'),
+	MTAn: a('MTANET.png'),
+	Azure: a('AzureF.png'),
+	MTAs: a('MTAs.png'),
+	MTAw: a('MTAs.png'),
+	Asec: a('Asec.png'),
+	
 };
 
 export default Assets;

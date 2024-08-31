@@ -18,7 +18,7 @@ export const items: Array<Experience> = [
         links: [
             { to: 'https://www.credly.com/badges/f4c443dd-5674-4099-bc0c-d8f286ed9539/linked_in_profile', label: 'View on Credly' }
         ],
-        logo: Assets.Unknown, // Replace with the appropriate asset if available
+        logo: Assets.CompTIA, // Replace with the appropriate asset if available
         shortDescription: 'Certified in cybersecurity fundamentals, including risk management and threat detection.'
     },
     {
@@ -35,7 +35,7 @@ export const items: Array<Experience> = [
         links: [
             { to: 'https://www.credly.com/badges/a0c13b11-4e60-43fb-8243-328cd40f6890?source=linked_in_profile', label: 'View on Credly' }
         ],
-        logo: Assets.Unknown, // Replace with the appropriate asset if available
+        logo: Assets.MTAs, // Replace with the appropriate asset if available
         shortDescription: 'Certified in foundational security concepts and Microsoft security tools.'
     },
     {
@@ -52,7 +52,7 @@ export const items: Array<Experience> = [
         links: [
             { to: 'https://www.credly.com/badges/8ec85f49-f1bd-4c29-9eb5-7ab54cea8678?source=linked_in_profile', label: 'View on Credly' }
         ],
-        logo: Assets.Unknown, // Replace with the appropriate asset if available
+        logo: Assets.MTAn, // Replace with the appropriate asset if available
         shortDescription: 'Certified in basic networking concepts and Microsoft networking technologies.'
     },
     {
@@ -69,7 +69,7 @@ export const items: Array<Experience> = [
         links: [
             { to: 'https://www.credly.com/badges/eaec4fd9-ec17-4bcf-9cc4-b29e8b132055?source=linked_in_profile', label: 'View on Credly' }
         ],
-        logo: Assets.Unknown, // Replace with the appropriate asset if available
+        logo: Assets.MTAw, // Replace with the appropriate asset if available
         shortDescription: 'Certified in managing and configuring Windows Server environments.'
     },
     {
@@ -86,7 +86,7 @@ export const items: Array<Experience> = [
         links: [
             { to: 'https://www.credly.com/badges/772efc9f-ae95-4136-93ef-ec9e673c52a6?source=linked_in_profile', label: 'View on Credly' }
         ],
-        logo: Assets.Unknown, // Replace with the appropriate asset if available
+        logo: Assets.Asec, // Replace with the appropriate asset if available
         shortDescription: 'Certified in the principles of security, compliance, and identity management within Microsoft environments.'
     },
     {
@@ -103,7 +103,7 @@ export const items: Array<Experience> = [
         links: [
             { to: 'https://www.credly.com/badges/f70f2262-7f28-4325-8e8d-8f5155e157c0', label: 'View on Credly' }
         ],
-        logo: Assets.Unknown, // Replace with the appropriate asset if available
+        logo: Assets.Azure, // Replace with the appropriate asset if available
         shortDescription: 'Certified in Azure cloud services, cloud concepts, and Microsoft cloud offerings.'
     }
 ];

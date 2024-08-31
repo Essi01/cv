@@ -76,6 +76,7 @@ const Assets = {
 	NHF : a('nhf.png'),
 	UiA: a('UiA.jpg'),
 	cyber: a('cybers.jpg'),
+	cloud: a()
 };
 
 export default Assets;
